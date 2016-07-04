@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750px,taget-densitydpi=320,user-scalable=no">
+    <title></title>
+
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+    var html = document.querySelector("html");
+    var rem = 750 / 20;
+    html.style.fontSize = rem + "px";
+</script>
+<body>
+<div id="main">
+    <div class="top">
+        <div class="profile">
+            <span>
+                <img class="head-image" src="images/head.jpg">
+            </span>
+            <div class="left">
+                <span class="player-name">
+                姚明1号姚明1号姚明
+                <span class="player-num">11号</span>
+            </span>
+                <span class="player-team">
+                北师大全明星2队北师大全明星2队
+                </span>
+            </div>
+        </div>
+        <div class="personal-data">
+
+        </div>
+    </div>
+    <div class="mid">
+        <div class="top-tip">
+            我的最近一场比赛
+        </div>
+        <div class="data">
+            <div class="team-data">
+
+                <img src="images/team_data.png">
+                <span>球队数据</span>
+            </div>
+            <div class="player-data">
+                <img src="images/per_data.png">
+                <span>个人数据</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="top-tip top-tip-bottom">
+            能力排行
+        </div>
+        <div class="rank">
+            <img class="rank-score-img" src="images/ranking_score_big.png">
+            <span class="rank-type">
+                得分榜
+            </span>
+            <div class="score-right">
+            <span class="rank-grade">
+                第12位
+            </span>
+            <img class="goto-img" src="images/back.png">
+            </div>
+        </div>
+        <div class="rank">
+            <img class="rank-score-img" src="images/ranking_assists_big.png">
+            <span class="rank-type">
+                助攻榜
+            </span>
+            <div class="score-right">
+            <span class="rank-grade">
+                第13位
+            </span>
+                <img class="goto-img" src="images/back.png">
+            </div>
+        </div>
+        <div class="rank">
+            <img class="rank-score-img" src="images/ranking_rebounds_big.png">
+            <span class="rank-type">
+                篮板榜
+            </span>
+            <div class="score-right">
+            <span class="rank-grade">
+                第14位
+            </span>
+                <img class="goto-img" src="images/back.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-team-data">
+    <div class="wrapper">
+        <span>球队比赛数据已送达！请回到微信公众号查看</span>
+        <a class="goto">去看看</a>
+        <br>
+        <span class="close">关闭</span>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
