@@ -17,7 +17,7 @@ body,html{
 .top{
     width:20rem;
     height:14.13rem;
-
+    position:relative;
 }
 .profile{
     padding-top:0.8rem;
@@ -178,8 +178,21 @@ body,html{
     margin-top: 1.5rem;
     background-color: #D6312f;
     color: #fff;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
 }
 .close{
     padding:1rem 2rem;
+    margin-bottom: 1rem;
+}
+#chart{
+    height: 350px;
+    top:-10rem;
+}
+.through-line{
+    width:18rem;
+    text-decoration: none;
+    list-style: none;
+    border:solid 1px #ecebf3;
+    height:0rem;
+    margin-bottom:1rem;
 }

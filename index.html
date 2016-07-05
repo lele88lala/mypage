@@ -29,7 +29,7 @@
                 </span>
             </div>
         </div>
-        <div class="personal-data">
+        <div id="chart">
 
         </div>
     </div>
@@ -98,10 +98,68 @@
         <span>球队比赛数据已送达！请回到微信公众号查看</span>
         <a class="goto">去看看</a>
         <br>
+        <li class="through-line"></li>
         <span class="close">关闭</span>
     </div>
 </div>
 
 </body>
 <script src="js/main.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+    option = {
+        tooltip: {},
+        radar: {
+            indicator: [
+                { name: '三分', max: 20},
+                { name: '二分', max: 20},
+                { name: '罚球', max: 20},
+                { name: '助攻', max: 20},
+                { name: '篮板', max: 20},
+                { name: '犯规', max: 20}
+            ],
+            startAngle: 120,
+            name: {
+                textStyle: {
+                    fontSize: 20,
+                    color: '#fff'
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: [
+                        '#fff'
+                    ].reverse()
+                }
+            },
+            splitArea: {
+                show: false
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#fff'
+                }
+            },
+        },
+        series: [{
+            type: 'radar',
+            itemStyle: {
+                normal: {
+                    color:"#f1a402",
+                    areaStyle: {
+                        type: 'default'
+                    }
+                }
+            },
+            data : [
+                {
+                    value : [10, 5, 5, 8, 12, 9]
+                }
+            ]
+        }]
+    };
+    var myChart = echarts.init(document.getElementById('chart'));
+    myChart.setOption(option);
+</script>
 </html>

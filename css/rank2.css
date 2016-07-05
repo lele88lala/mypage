@@ -1,0 +1,92 @@
+body,html{
+    margin:0;
+    padding:0;
+    color: #444;
+    font-size: 0.6rem;
+    line-height: 1.5;
+    font-family: "微软雅黑","Microsoft Yahei","宋体","Arial","sans-serif";
+}
+.full-cantainer{
+    width:20rem;
+    margin: 0 auto;
+}
+.selector{
+    background:url("../images/pic.jpg") no-repeat;
+    width:20rem;
+    margin: 0 auto;
+    height:8.5rem;
+    text-align: center;
+    padding-top:1.6rem;
+    position:fixed;
+
+}
+[id^="example9-"] {
+    display:block;
+    position:absolute;
+    width:45px;
+    height:55px;
+}
+.example9-item-0{
+    background:url("../images/ranking_assists_big.png")  no-repeat;
+    background-size: 1.35rem 1.45rem;
+    margin-right:0rem;
+}
+.example9-item-1{
+    background:url("../images/ranking_score_big.png")  no-repeat;
+    background-size: 1.35rem 1.45rem;
+}
+.example9-item-2{
+    background:url("../images/ranking_rebounds_big.png")  no-repeat;
+    background-size: 1.35rem 1.45rem;
+}
+.word-descrition{
+    margin-top:1.55rem;
+    color:#fff;
+    font-size:10px;
+    padding-left:0.1rem;
+}
+.assist-data {
+    color:#000;
+    width:20rem;
+    height:3.25rem;
+    text-align: center;
+    border-bottom: solid 2px #ecebf3;
+}
+.assist-data * {
+    display:block;
+    float:left;
+    line-height: 3.25rem;
+}
+.assist-data img{
+    vertical-align: middle;
+    margin-top:0.6rem;
+    width:1.8rem;
+    height:1.8rem;
+    border-radius: 50%;
+    margin-left:0.7rem;
+}
+.num{
+    margin-left:0.7rem;
+}
+.name span{
+    clear:left;
+    line-height:1.5rem;
+    margin-left:0.7rem;
+    text-align:left;
+}
+.grade{
+    float:right;
+    margin-right:2.5rem;
+    font-size:0.7rem;
+}
+.player-name{
+    font-size:0.8rem;
+}
+.team-name{
+    color:#8f8d94;
+    font-size:0.7rem;
+}
+.assist-list,.score-list,.rebound-list{
+    padding-top:10.1rem;
+    display:none;
+}
